@@ -1,0 +1,124 @@
+
+
+
+
+/* info container*/
+.info_container{
+    width:39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+@media screen and (max-width:768px){
+    .info_container{
+        display: none;
+    }
+}
+
+.signup_logo_image{
+    width:200px;
+    height:200px;
+}
+
+.info_container_text{
+    text-align: justify;
+}
+
+
+/* button styling*/
+.btn-flip {
+    opacity: 1;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size:15px;
+    text-transform: uppercase;
+    border:none;
+}
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #f5f5fa;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    background-image: linear-gradient(to right,#BFF098 , #6FD6FF);
+}
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #ffffff;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    background-image: linear-gradient(to right,#EA8D8D , #A890FE);
+}
+
+/* downl;oad button container*/
+.download_button_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:1200px){
+    .download_button_container{
+        flex-direction: row;
+    }
+}
+
+.ios_container,.android_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right:5px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width:1200px){
+    .ios_container,.android_container{
+        flex-direction: column;
+    }
+}
+
+.ios_logo_icon{
+    width:30px;
+    height:30px;
+}
+
+.android_logo_icon{
+    width:30px;
+    height: 30px;
+}
+
+.video_player_button_container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-bottom:20px;
+}

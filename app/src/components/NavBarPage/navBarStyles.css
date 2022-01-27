@@ -1,0 +1,35 @@
+
+.nav_bar_container{
+    width: 100%;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.nav_bar_sub_container{
+    margin:0px;
+    padding:0px;
+    box-shadow: #3c40434d 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.logo_image_navbar{
+    width:150px;
+    height:100px;
+}
+
+.user_image_shortcut{
+    color:#fff;
+    background-color: aqua;
+    border-radius: 100px;
+    padding:10px;
+    margin-left:10px;
+}
+
+.link_item{
+    text-decoration: none;
+}
+
+/* logout */
+.logout_icon_navbar{
+    width:20px;
+    height:20px;
+}

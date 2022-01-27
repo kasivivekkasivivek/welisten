@@ -1,0 +1,21 @@
+
+.scheduling_main_container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.scheduling_meeting_heading{
+    text-align: center;
+}
+
+.unorderd_scheduled_list_items{
+    list-style: none;
+    flex-wrap: wrap;
+    width:100%;
+    display: flex;
+}
